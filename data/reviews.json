@@ -1,0 +1,44 @@
+[
+    {
+      "name": "Lionel Messi",
+      "email": "lionelmessi@tuemail.com",
+      "review": "¡Excelente servicio! Me encantó la comida y el ambiente.",
+      "rating": 5
+    },
+    {
+      "name": "Julian Alvarez",
+      "email": "spider@hotmail.com",
+      "review": "Lugar que te hace pensar que estas en la casa de tus abuelos, recomiendo totalmente.",
+      "rating": 5
+    },
+    {
+      "name": "Leandro Paredes",
+      "email": "paredes@gmail.com",
+      "review": "Gran lugar para pasar con familia y amigos.",
+      "rating": 5
+    },
+    {
+      "name": "Emiliano Martinez",
+      "email": "dibu@gmail.com",
+      "review": "Excelente lugar, grandes porciones. Y se come como en tu casa, recomiendo.",
+      "rating": 5
+    },
+    {
+      "name": "Gonzalo Montiel",
+      "email": "monti@gmail.com",
+      "review": "Lugar digno de campeones del mundo, recomiendo.",
+      "rating": 5
+    },
+    {
+        "name": "Paulo Dybala",
+        "email": "oriypau@gmail.com",
+        "review": "Gran ambiente para estar tranquilo y comer rico.",
+        "rating": 5
+    },
+    {
+      "name": "Cristiano Ronaldo",
+      "email": "ronaldo@gmail.com",
+      "review": "Porciones abundates, recomiendo.",
+      "rating": 3
+    }
+]  

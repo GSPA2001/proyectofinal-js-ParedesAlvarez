@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="restaurante comida peruana argentina, barata en Mendoza">
+    <meta name="keywords" content="restaurante, Mendoza, Perú, Comida peruana, Comida barata">
+    <!-- link cdn bootstrap version web -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- mi link css -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>HOME - SaborNorteño</title>
+</head>
+<body>
+  <!--  banner principal -->
+  <header>
+    <!-- menu nav bootstrap responsive-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- agrego imagen al nav-->
+        <a class="navbar-brand" href="./index.html"><img src="./img/logo.gif" alt="sabor norteño logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-home" aria-current="page" href="./index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-carta" href="./pages/carta.html">CARTA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-reserva" href="./pages/reserva.html">RESERVAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-reseñas" href="./pages/resenas.html">RESEÑAS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- contenido principal -->
+  <main>
+    <div class="contenedorUno">
+      <div class="titulo">
+        <h1> EL SABOR NORTEÑO</h1>
+      </div>
+    </div>
+    <div class="contenedorDos">
+      <img src="img/ceviche.png" alt="Imagen de plato de comida peruana llamado ceviche">
+    </div>
+    <section>
+      <p>El restaurante peruano El Sabor Norteño abrió sus puertas en el mes de febrero del año 1993. Un negocio familiar con el emprendimiento de Don Santos Erasmo y Sra. Rosita, junto a su familia.</p>
+      <p>Nacidos en Trujillo Perú, inspirados en toda una vida de sabores, esfuerzo y dedicación, trajo consigo esa herencia para darle a conocer a un país que los acogió con los brazos abiertos: Argentina, en donde vuelca toda esa riqueza de tradiciones expresadas en la cocina peruana, producto culinario que ha cautivado el mundo y que hoy  podemos disfrutar en Mendoza.</p>
+      <p>Desde siempre han tenido como objetivo que todos los comensales se sintieran felices con los sabores típicos del Perú. Estamos seguros que lo hemos logrado.</p>
+    </section>
+    <!-- take away -->
+    <div class="row mt-3 mx-3" style="margin-bottom:25px;">
+      <div class="col-md-3">
+        <div style="margin-top: 50px; margin-left: 10px;"      class="text-center">
+          <h2 class="mt-3 text-black">Take Away</h2>
+          <p class="white-text">¡Estás a un minuto de completar tu pedido!</p>
+        </div>
+      </div>
+      <div class="col-md-9 justify-content-center">
+        <div class="card card-custom pb-4 justify-content-center">
+          <div class="card-body mt-0 mx-5">
+            <div class="text-center mb-3 pb-2 mt-3">
+              <p style="color: #495057 ;">Tu pedido:</p>
+            </div>
+            <form id="formTlleve" class="mb-0">
+              <div class="row mb-4">
+                <button id="menu-button" class="btn btn-outline-secondary" type="button">Selecciona el menú</button>
+                <div id="menu" style="display: none;">
+                  <h2>Platos</h2>
+                  <ul>
+                    <li>
+                      <h3>Tamales</h3>
+                      <p>Masa de maíz rellena con pollo, aceitunas y huevo.</p>
+                      <label for="checkbox">Precio: $600</label>
+                      <input type="checkbox" id="tamales-checkbox" data-price="600"><br>
+                      <label for="tamales-cantidad-input" class="form-label">Cantidad:</label><br>
+                      <input type="number" class="form-control" name="cantidad" id="tamales-cantidad-input" placeholder="1" min="1" max="20"><br>
+                    </li>
+                    <li>
+                      <h3>Ceviche Clásico</h3>
+                      <p>Cubos de pescado marinados con limón acompañados con rodajas de camote y choclo.</p>
+                      <label for="checkbox">Precio: $2800</label>
+                      <input type="checkbox" id="ceviche-clasico-checkbox" data-price="2800">
+                      <label for="ceviche-cantidad-input" class="form-label">Cantidad:</label><br>
+                      <input type="number" class="form-control" name="cantidad" id="ceviche-cantidad-input" placeholder="1"min="1"max="20"><br>
+                    </li>
+                    <li>
+                      <h3>Ceviche Mixto</h3>
+                      <p>Cubos de pescado marinados con limón acompañados con camarones, almejas, mejillones, calamar, berberechos, rodajas de camote y choclo.</p>
+                      <label for="checkbox">Precio: $3500</label>
+                      <input type="checkbox" id="ceviche-mixto-checkbox" data-price="3500">
+                      <label for="ceviche-mixto-cantidad-input" class="form-label">Cantidad:</label><br>
+                      <input type="number" class="form-control" name="cantidad" id="ceviche-mixto-cantidad-input" placeholder="1"min="1"max="20"><br>
+                    </li>
+                    <li>
+                      <h3>Cabrito</h3>
+                      <p>Cabrito a la olla con porotos y arroz.</p>
+                      <label for="checkbox">Precio: $2500</label>
+                      <input type="checkbox" id="cabrito-checkbox" data-price="2500">
+                      <label for="cabrito-cantidad-input" class="form-label">Cantidad:</label><br>
+                      <input type="number" class="form-control" name="cantidad" id="cabrito-cantidad-input" placeholder="1"min="1"max="20"><br>
+                    </li>
+                    <li>
+                      <h3>Lomo Saltado</h3>
+                      <p>Carne salteada con papas fritas, cebolla, tomate y porción de arroz.</p>
+                      <label for="checkbox">Precio: $2300</label>
+                      <input type="checkbox" id="lomo-saltado-checkbox" data-price="2300">
+                      <label for="lomo-cantidad-input" class="form-label">Cantidad:</label><br>
+                      <input type="number" class="form-control" name="cantidad" id="lomo-cantidad-input" placeholder="1"min="1"max="20"><br>
+                    </li>
+                    <li>
+                      <h3>Arroz Chaufa</h3>
+                      <p>Arroz con pollo, carne, huevo, salchicha, cebollita de verdeo salteado al wok con salsa de soja.</p>
+                      <label for="checkbox">Precio: $2000</label>
+                      <input type="checkbox" id="arroz-chaufa-checkbox" data-price="2000">
+                      <label for="chaufa-cantidad-input" class="form-label">Cantidad:</label><br>
+                      <input type="number" class="form-control" name="cantidad" id="chaufa-cantidad-input" placeholder="1"min="1"max="20"><br>
+                    </li>
+                    <li>
+                      <h3>Arroz Chaufa Vegetariano</h3>
+                      <p>Arroz con variedad de vegetales, cebollita de verdeo, huevo (opcional) salteado al wok con salsa de soja.</p>
+                      <label for="checkbox">Precio: $1500</label>
+                      <input type="checkbox" id="arroz-chaufa-vegetariano-checkbox" data-price="1500">
+                      <label for="chaufa-vegetariano-cantidad-input" class="form-label">Cantidad:</label><br>
+                      <input type="number" class="form-control" name="cantidad" id="chaufa-vegetariano-cantidad-input" placeholder="1"min="1"max="20"><br>
+                    </li>
+                    <li>
+                      <h3>Pollo Dorado</h3>
+                      <p>Pata muslo dorada con papas fritas y ensalada.</p>
+                      <label for="checkbox">Precio: $1200</label>
+                      <input type="checkbox" id="pollo-dorado-checkbox" data-price="1200">
+                      <label for="pollo-cantidad-input" class="form-label">Cantidad:</label><br>
+                      <input type="number" class="form-control" name="cantidad" id="pollo-cantidad-input" placeholder="1"min="1"max="20"><br>
+                    </li>
+                    <li>
+                      <h3>Arroz Chaufa con Rabas</h3>
+                      <p>Arroz con rabas de calamar, verduras picadas salteados al wok con salsa de soja.</p>
+                      <label for="checkbox">Precio: $3200</label>
+                      <input type="checkbox" id="arroz-chaufa-rabas-checkbox" data-price="3200">
+                      <label for="chaufa-rabas-cantidad-input" class="form-label">Cantidad:</label><br>
+                      <input type="number" class="form-control" name="cantidad" id="chaufa-rabas-cantidad-input" placeholder="1"min="1"max="20"><br>
+                    </li>
+                    <li>
+                      <h3>Arroz con Mariscos</h3>
+                      <p>Arroz amarrillo con un mix de mariscos.</p>
+                      <label for="checkbox">Precio: $3800</label>
+                      <input type="checkbox" id="arroz-mariscos-checkbox" data-price="3800">
+                      <label for="arroz-mariscos-cantidad-input" class="form-label">Cantidad:</label><br>
+                      <input type="number" class="form-control" name="cantidad" id="arroz-mariscos-cantidad-input" placeholder="1"min="1"max="20"><br>
+                    </li>
+                    <li>
+                      <h3>Rabas</h3>
+                      <p>Aros de calamar fritos acompañados con papas fritas y ensalada.</p>
+                      <label for="checkbox">Precio: $3500</label>
+                      <input type="checkbox" id="rabas-checkbox" data-price="3500">
+                      <label for="rabas-cantidad-input" class="form-label">Cantidad:</label><br>
+                      <input type="number" class="form-control" name="cantidad" id="rabas-cantidad-input" placeholder="1"min="1"max="20"><br>
+                    </li>
+                    <li>
+                      <h3>Jalea de Mariscos</h3>
+                      <p>Trozos de pescado, aros de calamar,mix de mariscos fritos acompañado con rodajas de papas y salsa criolla.</p>
+                      <label for="checkbox">Precio: $3900</label>
+                      <input type="checkbox" id="jalea-mariscos-checkbox" data-price="3900">
+                      <label for="jalea-cantidad-input" class="form-label">Cantidad:</label><br>
+                      <input type="number" class="form-control" name="cantidad" id="jalea-cantidad-input" placeholder="1"min="1"max="20"><br>
+                    </li>
+                  </ul>
+                  <button id="btn-calcular-presupuesto" class="btn btn-outline-secondary">Calcular presupuesto</button>
+                  <p>El presupuesto total es: <span id="resultado-presupuesto"></span></p>
+                </div>
+                <div class="col">
+                  <div class="form-outline">
+                    <label for="nameInput" class="form-label">Tu nombre y apellido:</label><br>
+                    <input id="nameInput" class="form-control" type="text" min="8" placeholder="Lionel Messi"><br>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col">
+                  <div class="form-outline">
+                    <label class="form-label">La fecha:</label>
+                    <input id="fechaInput" type="date" class="form-control"/>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-outline">
+                    <label class="form-label">Horario:</label>
+                    <input id="horarioInput" type="time" class="form-control"/>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col">
+                  <div class="form-outline">
+                    <label for="phone" class="form-label">Número de teléfono:</label>
+                    <input type="tel" id="phone" class="form-control" name="phone" pattern="^\d{10}$" placeholder="261-000-0000">
+                  </div>
+                </div>
+              </div>
+              <div class="float-end">
+                <!-- Submit button -->
+                <input id="formReset" class="btn btn-outline-secondary" type="button" value="Restablecer">
+                <button id="btn-pedir" type="submit" class="btn btn-danger">Pedir</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contenedorUno">
+      <h1> ENCUENTRANOS </h1>
+    </div>
+    <h3>Remedios escalada 2093, ciudad de Mendoza, Argentina</h3>
+    <h2>↘ Como llegar ↙</h2>
+    <a href="https://www.google.es/maps/dir//El+Sabor+Norteño,+M5500EHX,+Av.+San+Mart%C3%ADn+2033-2099,+M5500+Mendoza/@-32.8793946,-68.8360764,17z/data=!3m1!4b1!4m16!1m6!3m5!1s0x967e08e0428cf3bf:0x7b6014dc0e4a11df!2sEl+Sabor+Norteño!8m2!3d-32.8793946!4d-68.8360764!4m8!1m0!1m5!1m1!1s0x967e08e0428cf3bf:0x7b6014dc0e4a11df!2m2!1d-68.8360764!2d-32.8793946!3e3" target="_blank">
+      <img src="img/maps.png" alt="imagen de logo de maps">
+    </a>
+  </main>
+
+  <!-- pie de pagina -->
+  <footer>
+    <h2> Desde el año 1993 nos propusimos acercarles los más sabrosos platos del Perú</h2>
+    <!-- enlace absoluto -->
+    <a href="https://es-la.facebook.com/ElSaborNorteno/" target="_blank">
+      <img src="img/facebook-logo.png" alt="imagen de logo de facebook que es una solo una letra f ">
+    </a>
+    <a href="https://www.google.es/maps/place/El+Sabor+Norteño/@-32.8793946,-68.8360764,17z/data=!3m1!4b1!4m5!3m4!1s0x967e08e0428cf3bf:0x7b6014dc0e4a11df!8m2!3d-32.8793946!4d-68.8360764" target="_blank">
+      <img src="img/google-logo.png" alt="imagen de logo de google que es una solo una letra g ">
+    </a>
+    <div>
+      <h3>TODOS LOS DERECHOS RESERVADOS</h3>
+    </div>
+  </footer>
+  <!-- link cdn de sweet alert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- link cdn de bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <!-- Mi Link de javascript-->
+  <script src="scripts/main.js"></script>
+</body>
+</html>

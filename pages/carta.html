@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="restaurante comida peruana argentina, barata en Mendoza">
+    <meta name="keywords" content="restaurante, Mendoza, Perú, Comida peruana, Comida barata, platos abundantes">
+    <!-- mi link css de bootstrap version web -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- mi link de css -->
+    <link rel="stylesheet" href="./../css/main.css">
+    <title>Carta - SaborNorteño</title>
+</head>
+<body>
+  <!--  banner principal -->
+    <header>
+        <!-- menu nav bootstrap responsive-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+             <!-- agrego imagen al nav-->
+             <a class="navbar-brand" href="./../index.html"><img src="../img/logo.gif" alt="sabor norteño logo"></a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+             </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-home" aria-current="page" href="./../index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-carta" href="./carta.html">CARTA</a>
+                        </li>
+                        <li>
+                          <a class="nav-reserva" href="./reserva.html">RESERVAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-reseñas" href="./resenas.html">RESEÑAS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+  <!-- contenido principal -->
+  <main>
+    <!-- CLASS obligatoria (crea las 12 columnas) row con bootstrap-->
+    <div class="row">
+      <!-- grupo grid de cards-->
+      <div class="row row-cols-1 row-cols-sm-3">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h2>ENTRADAS</h2>
+              <p class="card-text">Nuestras entradas.</p>
+            </div>
+            <div id="carouselEntradas" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselEntradas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselEntradas" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselEntradas" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../img/entradas/ceviche.png" class="d-block w-100" alt="ceviche clasico">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>CEVICHE CLÁSICO</h4>
+                    <p class="font-monospace">$2800.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/entradas/ceviche-mixto.png" class="d-block w-100" alt="ceviche-mixto">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>CEVICHE MIXTO</h4>
+                    <p class="font-monospace">$3500.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/entradas/tamales.png" class="d-block w-100" alt="tamales">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>TAMALES</h4>
+                    <p class="font-monospace">$600.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselEntradas" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselEntradas" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h2>EXTRAS</h2>
+              <p class="card-text">Nuestros extras.</p>
+            </div>
+            <div id="carouselExtras" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExtras" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExtras" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../img/extras/arroz.png" class="d-block w-100" alt="porcion de arroz">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>ARROZ BLANCO</h4>
+                    <p class="font-monospace">$400.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/extras/ensalada-mixta.png" class="d-block w-100" alt="ensalada mixta">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>ENSALADA MIXTA</h4>
+                    <p class="font-monospace">$500.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExtras" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExtras" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+       </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h2>PRINCIPALES</h2>
+              <p class="card-text">Nuestros principales.</p>
+            </div>
+            <div id="carouselPrincipales" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselPrincipales" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselPrincipales" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselPrincipales" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselPrincipales" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselPrincipales" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselPrincipales" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselPrincipales" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselPrincipales" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselPrincipales" data-bs-slide-to="8" aria-label="Slide 9"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../img/principales/pollo dorado.png" class="d-block w-100" alt="pollo dorado">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>POLLO DORADO</h4>
+                    <p class="font-monospace">$1200.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/principales/cabrito.png" class="d-block w-100" alt="Cabrito">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>CABRITO</h4>
+                    <p class="font-monospace">$2500.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/principales/lomo-saltado.png" class="d-block w-100" alt="lomo salteado">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>LOMO SALTEADO</h4>
+                    <p class="font-monospace">$2300.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/principales/arroz-chaufa.png" class="d-block w-100" alt="arroz chaufa">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>ARROZ CHAUFA</h4>
+                    <p class="font-monospace">$2000.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/principales/chaufa-vegetariano.png" class="d-block w-100" alt="arroz chaufa vegetariano">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>ARROZ CHAUFA VEGETARIANO</h4>
+                    <p class="font-monospace">$1500.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/principales/arrozchaufaconmariscos.png" class="d-block w-100" alt="arroz chaufa con rabas">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>ARROZ CHAUFA con RABAS</h4>
+                    <p class="font-monospace">$3200.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/principales/arroz-con-mariscos.png" class="d-block w-100" alt="arroz con mariscos">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>ARROZ con MARISCOS</h4>
+                    <p class="font-monospace">$3800.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/principales/rabas.png" class="d-block w-100" alt="Rabas">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>RABAS</h4>
+                    <p class="font-monospace">$3500.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/principales/jalea-da-mariscos.png" class="d-block w-100" alt="arroz chaufa con rabas">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>JALEA de MARISCOS</h4>
+                    <p class="font-monospace">$3900.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselPrincipales" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselPrincipales" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="cuadro-flotante" class="cuadro-flotante oculto">
+      <p>Selecciona los platos que desees:</p>
+      <ul id="lista-platos"></ul>
+      <div id="btn-calcular-presupuesto" class="btn btn-outline-secondary">Calcular presupuesto</div>
+      <p>El presupuesto total es: <span id="resultado-presupuesto"></span></p>
+      <div id="btn-limpiar-presupuesto" class="btn btn-outline-secondary">Limpiar presupuesto</div>
+      <div id="btn-cerrar-cuadro-flotante" class="btn btn-outline-secondary">Cerrar</div>
+    </div>
+    
+    <div class="presupuesto">
+      <div id="btn-presupuesto" class="btn btn-outline-secondary">Calcular presupuesto</div>
+    </div>        
+  </main>
+    
+  <!-- pie de pagina -->
+    <footer>
+        <h2> Desde el año 1993 nos propusimos acercarles los más sabrosos platos del Perú</h2>
+        <!-- enlace absoluto -->
+        <a href="https://es-la.facebook.com/ElSaborNorteno/" target="_blank">
+        <img src="../img/facebook-logo.png" alt="imagen de logo de facebook que es una solo una letra f ">
+        </a>
+        <a href="https://www.google.es/maps/place/El+Sabor+Norteño/@-32.8793946,-68.8360764,17z/data=!3m1!4b1!4m5!3m4!1s0x967e08e0428cf3bf:0x7b6014dc0e4a11df!8m2!3d-32.8793946!4d-68.8360764" target="_blank">
+        <img src="../img/google-logo.png" alt="imagen de logo de google que es una solo una letra g ">
+        </a>
+        <div>
+          <h3>TODOS LOS DERECHOS RESERVADOS</h3>
+        </div>  
+    </footer>
+        <!-- mi link de javascript carta-->
+        <script src="./../scripts/carta.js"></script>
+        <!-- mi Link de javascript main
+        <script src="./../scripts/main.js"></script>-->
+    <!-- mi link de bootstrap javascript version web-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

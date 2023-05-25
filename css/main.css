@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* estilos generico*/
+body{
+    background-color: #f0f8ff;
+    font-family:'Roboto', sans-serif;
+}
+/*estilo de header*/
+header{
+    background-color: #c3dff7;
+    text-align: center;
+    padding: 10px;
+}
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+/* estilo de elementos*/
+h1{
+    color: #1b1c1a;
+    font-family: cursive;   
+} 
+
+h2{
+    color: #1b1c1a;
+    font-family: cursive;
+}
+
+/*estilos de main*/
+/*main de index*/
+main{
+    text-align: center;
+    background-color: #f0f8ff;
+    padding: 40px;
+}
+
+main .contenedorUno .titulo{
+    position: absolute;
+    left: 20%;
+    padding: 5px;
+}
+
+main .contenedorDos img{
+    width: 100%;
+}
+
+main section p{
+    margin-bottom: 35px;
+}
+
+/* main del take away*/
+main form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+#menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+} #menu li {
+    flex-basis: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* main de reservas*/
+main .contenedorTres a img{
+    width: 8%;
+}
+
+ul{
+    text-align: center;
+    list-style: none;
+}
+
+main .contenedorCuatro a img{
+    width: 10%;
+}
+
+/*main de carta*/
+main .carousel-item{
+    text-align: center;
+}#cuadro-flotante {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f8ff;
+    padding: 10px; 
+    border-radius: 10px;
+    border: 3px solid #ffcc00;
+    z-index: 100;
+}
+.oculto {
+    display: none;
+}
+
+.addNumber_cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.button-container {
+    display: flex;
+    align-items: center;
+}
+  
+.add-btn,
+.remove-btn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    color: rgba(255, 4, 4, 0.888);
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px #00000030;
+}
+  
+.add-btn:hover,
+.remove-btn:hover {
+    background-color: #e7e7e7;
+}
+  
+.quantity-value {
+    width: 50px;
+    height: 30px;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.quantity-value:focus {
+    outline: none;
+}
+
+#lista-platos li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; 
+}#lista-platos li span {
+    margin-left: 10px;
+}
+/*main de reseñas*/
+#reviewContainer {
+    background-color: rgba(255, 190, 190, 0.757);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.review {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}.review-name {
+    font-weight: bold;
+    margin-right: 10px;
+}.review-divider {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #c3dff7;
+    margin: 0 10px;
+}.rating {
+    direction: rtl;
+    display: inline-block;
+}.rating input {
+    display: none;
+}.rating label {
+    color: #ddd;
+    font-size: 30px;
+    margin: 0;
+    cursor: pointer;
+}.rating label:before {
+    content: '\2605';
+    padding: 5px;
+}.rating input:checked ~ label {
+    color: #ffcc00;
+}
+.rating label:hover,
+.rating label:hover ~ label {
+    color: #ffcc00;
+}  
+
+/*animacion*/
+main .carousel-item{
+    animation-name: ani_portada;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-delay: 3s;
+}
+@keyframes ani_portada {
+    0%{
+        transform: scale(1);
+        opacity: 100%;
+    }
+    15%{
+        transform: scale(1.2);
+        opacity: 75%;
+    }
+    25%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+        opacity: 80%;
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/* estilos de footer*/
+footer{
+    background-color: rgba(255, 92, 92, 0.757);
+    text-align: center;
+    margin-top: 40px;
+}
+footer a img{
+    width: 5%;
+}
+
+footer div{
+    background-color: #f0f8ff;
+}
+
+/* Media queries*/
+/* MQ celular*/
+@media only screen and (max-width: 400px) {
+    main p{
+        color: goldenrod;
+        
+    }
+    main .col{
+        padding: 5px;
+    }
+    /* main de carta*/
+    #cuadro-flotante {
+        width: 90%;
+        max-width: 300px; 
+        font-size: 12px; 
+    }#lista-platos li span {
+        margin-left: 3px;
+    }
+    .add-btn,
+    .remove-btn {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    }.quantity-value {
+        width: 30px;
+        height: 20px;
+        font-size: 12px; 
+    }
+}
+
+/*MQ tablet*/
+@media only screen and (min-width:570px) and (max-width: 1224px) {
+    main .col{
+        padding: 10px;
+        display: grid;
+        grid-template-rows: repeat(1, 3fr) ;
+        grid-template-columns: repeat(1, 3fr) ;
+   }
+   main ul li h3{
+    color: rgb(209, 178, 0);
+    font-family: bold;
+   }
+
+   /*main de carta*/
+   #cuadro-flotante {
+    width: 80%; 
+    max-width: 500px; 
+    font-size: 14px; 
+  }
+  #lista-platos li span {
+    margin-left: 5px; 
+  }
+  .add-btn,
+  .remove-btn {
+    width: 25px; 
+    height: 25px; 
+    font-size: 14px;
+  }
+  .quantity-value {
+    width: 40px;
+    height: 25px; 
+    font-size: 14px; 
+  }
+}
+
+/*MQ desktop*/
+@media only screen and (min-width: 1225px) and (max-width:1600px){
+    main .col{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    main p{
+        color: rgb(33, 33, 11);
+        font-family: bold;
+    }
+    main ul li h3{
+        color: goldenrod;
+        font-family: Impact,'Arial Narrow Bold', sans-serif;
+    }
+}

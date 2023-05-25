@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="restaurante comida peruana argentina, barata en Mendoza">
+    <meta name="keywords" content="restaurante, Mendoza, Perú, Comida peruana, Comida barata, buena comida">
+    <!-- link cdn de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- link cdn tostify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- mi link de css -->
+    <link rel="stylesheet" href="./../css/main.css">
+    <title>Reseñas - SaborNorteño</title>
+</head>
+<body>
+  <!--  banner principal -->
+    <header>
+        <!-- menu nav bootstrap responsive-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+             <!-- agrego imagen al nav-->
+             <a class="navbar-brand" href="./../index.html"><img src="../img/logo.gif" alt="sabor norteño logo"></a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+             </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                         <a class="nav-home" aria-current="page" href="./../index.html">HOME</a>
+                        </li>     
+                        <li class="nav-item">
+                         <a class="nav-carta" href="./carta.html">CARTA</a>
+                        </li>
+                        <li>
+                          <a class="nav-reserva" href="./reserva.html">RESERVAS</a>
+                        </li>
+                        <li class="nav-item">
+                         <a class="nav-reseñas" href="./resenas.html">RESEÑAS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+   <!-- contenido principal -->
+    <main>
+      <h1>Deja tu reseña</h1>
+      <form id="review-form" class="mainForm" action="" method="post">
+        <fieldset>
+          <label for="nameInput" class="form-label">Tu nombre:</label><br>
+          <input id="nameInput" class="form-control" type="text" placeholder="Lionel Messi"><br>
+          <label for="emailInput" class="form-label">Tu email:</label><br>
+          <input id="emailInput" class="form-control" type="email" placeholder="lionelmessi@tuemail.com"><br>
+          <label for="reviewInput" class="form-label">Tu reseña:</label><br>
+          <textarea id="reviewInput" class="form-control" rows="5" cols="20" placeholder="Reseña"></textarea><br>
+          <div class="rating">
+            <input type="radio" id="star5" name="rating" value="5" />
+            <label for="star5" title="5 estrellas"></label>
+            <input type="radio" id="star4" name="rating" value="4" />
+            <label for="star4" title="4 estrellas"></label>
+            <input type="radio" id="star3" name="rating" value="3" />
+            <label for="star3" title="3 estrellas"></label>
+            <input type="radio" id="star2" name="rating" value="2" />
+            <label for="star2" title="2 estrellas"></label>
+            <input type="radio" id="star1" name="rating" value="1" />
+            <label for="star1" title="1 estrella"></label>
+          </div>
+          <input id="formReset" class="btn btn-outline-secondary" type="reset">
+          <input id="formSubmit" class="btn btn-danger" type="submit">
+        </fieldset>
+      </form>
+      <hr>
+      <h2>Reseñas de Nuestros Consumidores: </h2>
+      <div id="reviewContainer"></div>
+    </main>    
+    
+   <!-- pie de pagina -->
+    <footer>
+        <h2> Desde el año 1993 nos propusimos acercarles los más sabrosos platos del Perú</h2>
+        <!-- enlace absoluto -->
+        <a href="https://es-la.facebook.com/ElSaborNorteno/" target="_blank">
+        <img src="../img/facebook-logo.png" alt="imagen de logo de facebook que es una solo una letra f ">
+        </a>
+        <a href="https://www.google.es/maps/place/El+Sabor+Norteño/@-32.8793946,-68.8360764,17z/data=!3m1!4b1!4m5!3m4!1s0x967e08e0428cf3bf:0x7b6014dc0e4a11df!8m2!3d-32.8793946!4d-68.8360764" target="_blank">
+        <img src="../img/google-logo.png" alt="imagen de logo de google que es una solo una letra g ">
+        </a>
+        <div>
+          <h4>TODOS LOS DERECHOS RESERVADOS</h4>
+        </div>  
+    </footer>
+    <!-- link cdn de sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- link cdn de tostify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- link cdn bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- mi link de javascript resenas-->
+    <script src="./../scripts/resenas.js"></script>
+    <!-- mi Link de javascript main
+    <script src="./../scripts/main.js"></script>-->
+</body>
+</html>
